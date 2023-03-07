@@ -14,8 +14,7 @@ header {
     padding: 1%;
     background-color: #000000;
     color: #fff;
-    
-  }
+    }
 
 .logo img {
   
@@ -44,35 +43,64 @@ nav a:hover {
 }
 /* sections CSS */
 
-.aboutme {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-}
-.aboutme h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
 }
 
-.aboutme h3{
+.headshot {
+    float: left;
+    max-width: 300px;
+    margin-right: 20px;
+    
+}
+
+.aboutme {
+    color: #fff;
+
+}
+
+.about h2 {
+    font-size: 42px;
+    margin-top: 100px;
+
+}
+
+.about p{
+    font-size: 16px;
     font-weight: 300;
 }
+
+button {
+    background-color: #cbf511;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+}
+
+
+
+
 footer {
     font-weight: 300;
+    margin-top: 60px;
 }
 
 /* Portfolio application section */
-/* .container {
+.container {
     margin: 20px;
-} */
+    width: 60%; 
+    display: flex
+} 
 
-.row {
+.cards {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .image-1 {
@@ -80,9 +108,9 @@ footer {
     position: relative;
     flex: 1;
     padding: 5px;
-    max-width: 800px;
+    /* max-width: 800px; */
     height: 300px;
-    margin: 10px;
+   
     overflow: hidden;
 }
 
@@ -98,6 +126,7 @@ footer {
     color: #fff;
     width: 100%;
     height: 100%;
+
 }
 
 .image-1 .details h2{
@@ -105,15 +134,30 @@ footer {
     font-size: 24px;
     font-weight: 500;
     margin-top: 125px;
+
 }
+
 .image-1 .details p{
     text-align: center;
     font-size: 18px;
     font-weight: 300;
-    margin-top: 5px; 
+    margin-top: 5px;
+
 }
 
-/* row 2  */
+.image-1 :hover {
+    color: #cbf511;
+}
+
+/* row 2 & 3  */
+
+/*  container contorls the childern styles in the container*/
+.container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+} 
 
 .row-2 {
     width: 100%;
@@ -123,15 +167,16 @@ footer {
 
 }
 
+
 .image-2 {
     background: white;
     position: relative;
     flex: 1;
     padding: 5px;
-    max-width: 400px;
-    height: 150px;
-    margin: 10px;
-    overflow: hidden;
+    /* width: 300px;  */
+    height: 200px;
+    
+   
 }
 
 .image-2 img {
@@ -160,4 +205,35 @@ footer {
     font-size: 18px;
     font-weight: 300;
     margin-top: none; 
+}
+
+.image-2 :hover {
+    color: #cbf511;
+}
+/* contact section */
+
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.contact ul li{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.contact li a:hover{
+    color: #cbf511;
 }
